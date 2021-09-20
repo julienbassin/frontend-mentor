@@ -16,8 +16,8 @@ body{
 
 .pattern-bottom{
     position: absolute;
-    left: 40%;
-    bottom: 30%;
+    left: 50%;
+    top: 50%;
     display: inline-block;
 }
 
