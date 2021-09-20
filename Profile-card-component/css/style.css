@@ -7,7 +7,22 @@ body{
     width: 1440px;
 }
 
+.pattern-top{
+    position: absolute;
+    right: 50%;
+    bottom: 30%;
+    display: inline-block;
+}
+
+.pattern-bottom{
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+    display: inline-block;
+}
+
 .card{
+    box-shadow: 10px 10px 100px rgba(0,0,0,0.2);
     background-color: #FFF;
     width: 350px;
     height: 374px;
