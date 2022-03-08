@@ -1,0 +1,185 @@
+/* Typography*/
+:root{
+    --background-light-gray: #f2f2f2;
+    --cyan: #2AB3B1;
+    --light-cyan: #4cbdbd;
+    --bright-yellow: #c0df34;
+    --light-gray: #9AA7BE;
+    --white: #fff;
+    min-height: 50vh;
+}
+
+
+body{
+    background-color: var(--background-light-gray);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* -webkit-box-sizing: border-box;
+          box-sizing: border-box; */
+}
+
+h1{
+    font-size: 1.25rem;
+}
+
+h2{
+    font-size: 0.938rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+/* Layout */
+
+.intro-section{
+    background-color: var(--white);
+}
+
+.main{
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 19.438rem;
+    max-width: 800px;
+    margin: 0 auto;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container{
+    padding: 1.375rem 2rem;
+}
+
+.intro-section h1{
+    margin-bottom: 1em;
+    color: var(--cyan);
+}
+
+.intro-section h2{
+    margin-bottom: 1em;
+    color: var(--bright-yellow);
+}
+
+.intro-section .gain-access{
+    font-size: 0.825rem;
+    color: var(--light-gray);
+    line-height: 1.8;
+    letter-spacing: -0.175px;
+}
+
+.subscription-section{
+    background-color: var(--cyan);
+}
+
+.subscription-section h1{
+    margin-bottom: 1.5rem;      
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.per-month{
+    display: inline-block;
+    font-weight: 400;
+    top: -2px;
+    margin-left: 1em;
+    opacity: 0.5;
+    line-height: 1.625;
+    letter-spacing: -0.2px;
+}
+
+.subscription-section .full-access{
+    font-style: normal;
+    font-weight: normal;
+    margin-top: .75em;
+}
+
+.subscription-section .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: var(--bright-yellow);
+    width: 90%;
+    padding: .65em .75em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+.whyus-section{
+    background-color: var(--light-cyan);
+}
+
+.subscription-section,
+.whyus-section{
+    color: var(--white);
+}
+
+.whyus-section h2{
+    padding-bottom: 1em;
+}
+
+.whyus-section ul{
+    list-style: none;
+}
+
+.whyus-section ul li{
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: -0.175px;
+    opacity: 0.75;
+}
+
+@media (min-width: 900px) {
+    .main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+        flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            width: 40%;
+      }
+
+      .joined-section{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+      }
+
+      .subscription-section,
+      .whyus-section{
+        width: 100%;
+    }
+
+    .intro-section h1{
+        font-size:  1.5rem;
+    }
+
+    .intro-section h2{
+        font-size: 1.125rem;
+    }    
+}
