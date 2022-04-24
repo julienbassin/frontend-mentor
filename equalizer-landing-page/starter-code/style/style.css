@@ -118,7 +118,7 @@ body::before {
     min-height: 100vh;
     background-image: url('../assets/bg-main-mobile.png');
     background-repeat: no-repeat;
-    background-position: 55px -310px;
+    background-position: 22px -296px;
     /* top: -291px;
     left: 65px; */
     background-size: cover;
@@ -148,6 +148,15 @@ header {
 
 .header__title {
     margin-bottom: 2rem;
+}
+
+.plan {
+    position: relative;
+    width: 100%;
+    height: 37.5rem;
+    margin: 6rem 0 24.375rem;
+    background-color: var(--color__neutral-1);
+
 }
 
 .plan .plan__img {
