@@ -73,12 +73,13 @@ html {
 .plan-premium__title {
     font-size: var(--fs__h2-mobile-1);
     font-weight: var(--bold);
-    color: var(--color__neutral-1);
+    color: var(--color__neutral-2);
 }
 
 .plan-premium__p {
     font-size: var(--fs__body-mobile-2);
     font-weight: var(--regular);
+    color: var(--color__neutral-2);
 }
 
 .plan-premium__price {
@@ -156,10 +157,40 @@ header {
     height: 37.5rem;
     margin: 6rem 0 24.375rem;
     background-color: var(--color__neutral-1);
+    border-radius: 10px;
+    z-index: 0;
 
 }
 
-.plan .plan__img {
-    width: 13rem;
+.plan .plan__img-bg {
+    position: absolute;
+    transform: scale(0.9);
+    top: -1.45rem;
+    left: 10%;
+}
 
+.plan .plan__img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 120px;
+    left: 45%;
+    width: 13rem;
+    z-index: 1;
+}
+
+.plan .plan-premium {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 34.125rem;
+    position: absolute;
+    bottom: -20rem;
+    padding: 3rem 2.25rem;
+    background-color: var(--color__primary-2);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.plan .plan-premium__p {
+    margin: 1rem 0;
 }
