@@ -173,7 +173,7 @@ header {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 120px;
-    left: 45%;
+    left: 49%;
     width: 13rem;
     z-index: 1;
 }
@@ -193,4 +193,30 @@ header {
 
 .plan .plan-premium__p {
     margin: 1rem 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3.6875rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn--ios {
+    background-color: var(--color__neutral-1);
+    color: var(--color__neutral-2);
+    margin: 1rem 0;
+}
+
+.btn--android {
+    background-color: var(--color__neutral-2);
+}
+
+.btn--ios span,
+.btn--android span {
+    margin-left: .5rem;
+    font-weight: var(--bold);
 }
