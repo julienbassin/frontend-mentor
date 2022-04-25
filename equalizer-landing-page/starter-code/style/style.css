@@ -230,3 +230,52 @@ header {
     margin-left: .5rem;
     font-weight: var(--bold);
 }
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+
+/* .footer ul {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.footer ul li {
+    padding-bottom: .25rem;
+} */
+
+.footer p {
+    width: 100%;
+    margin: 2rem 0;
+    line-height: 1.625;
+    font-weight: var(--regular);
+}
+
+.footer p a {
+    font-weight: var(--bold);
+}
+
+.icons {
+    width: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 46rem) {
+    .icons {
+        align-self: flex-end;
+    }
+}
+
+.icons a {
+    cursor: pointer;
+    transition: 0.2ms all ease-in;
+}
+
+.icons a:hover {
+    filter: invert(57%) sepia(39%) saturate(2301%) hue-rotate(326deg) brightness(103%) contrast(102%);
+}
