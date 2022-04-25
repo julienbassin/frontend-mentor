@@ -211,8 +211,18 @@ header {
     margin: 1rem 0;
 }
 
+.btn--ios:hover {
+    background-color: var(--color__primary-1);
+    transition: 0.2ms all ease-in;
+}
+
 .btn--android {
     background-color: var(--color__neutral-2);
+}
+
+.btn--android:hover {
+    background-color: var(--color__primary-3);
+    transition: 0.2ms all ease-in;
 }
 
 .btn--ios span,
