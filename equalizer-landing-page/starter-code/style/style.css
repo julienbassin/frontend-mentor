@@ -254,7 +254,7 @@ header {
     .plan .plan__img {
         width: 16.88rem;
         left: 30%;
-        top: 8rem;
+        top: 10rem;
     }
 }
 
@@ -271,7 +271,14 @@ header {
     z-index: 2;
 }
 
-@media screen and (min-width: 46rem) {}
+@media screen and (min-width: 46rem) {
+    .plan .plan-premium {
+        width: 25rem;
+        height: 34.16rem;
+        left: 35%;
+        top: 35%;
+    }
+}
 
 .plan .plan-premium__p {
     margin: 1rem 0;
