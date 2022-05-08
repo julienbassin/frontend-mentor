@@ -164,7 +164,7 @@ body {
     body {
         background-image: url("../assets/bg-pattern-1.svg");
         background-repeat: no-repeat;
-        background-position: top right;
+        background-position: right -2em top -3em;
         background-size: 16.66rem;
     }
 }
@@ -188,11 +188,27 @@ header {
 }
 
 .header__logo {
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .header__title {
     margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 46rem) {
+    .header {
+        padding: 2.5rem 0;
+    }
+
+    .header__title {
+        width: 70%;
+    }
+
+    .header__p {
+        width: 74%;
+        max-width: 32rem;
+    }
 }
 
 .plan {
@@ -206,11 +222,23 @@ header {
 
 }
 
+@media screen {
+    .plan {
+        margin: 15.75rem auto 11.375rem;
+    }
+}
+
 .plan .plan__img-bg {
     position: absolute;
     transform: scale(0.9);
     top: -1.45rem;
     left: 10%;
+}
+
+@media screen and (min-width: 46rem) {
+    .plan .plan__img-bg {
+        left: 30%;
+    }
 }
 
 .plan .plan__img {
@@ -220,6 +248,14 @@ header {
     left: 49%;
     width: 13rem;
     z-index: 1;
+}
+
+@media screen {
+    .plan .plan__img {
+        width: 16.88rem;
+        left: 30%;
+        top: 8rem;
+    }
 }
 
 .plan .plan-premium {
@@ -234,6 +270,8 @@ header {
     border-radius: 10px;
     z-index: 2;
 }
+
+@media screen and (min-width: 46rem) {}
 
 .plan .plan-premium__p {
     margin: 1rem 0;
