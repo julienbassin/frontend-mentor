@@ -81,6 +81,8 @@ html {
     }
 }
 
+@media screen and (min-width) {}
+
 .header__p {
     font-size: var(--fs__body-mobile-1);
     font-weight: var(--regular);
@@ -154,6 +156,14 @@ body::before {
     }
 }
 
+@media screen and (min-width: 55rem) {
+    body::before {
+        background-image: url(../assets/bg-main-desktop.png);
+        right: 20%;
+        top: -5%;
+    }
+}
+
 body {
     width: 100%;
     display: flex;
@@ -166,6 +176,15 @@ body {
         background-repeat: no-repeat;
         background-position: right -2em top -3em;
         background-size: 16.66rem;
+    }
+}
+
+@media screen and (min-width: 55rem) {
+    body {
+        background-image: url("../assets/bg-pattern-1.svg");
+        background-repeat: no-repeat;
+        background-position: right top -2em;
+        background-size: 20rem;
     }
 }
 
@@ -222,7 +241,7 @@ header {
 
 }
 
-@media screen {
+@media screen and (min-width: 46rem) {
     .plan {
         margin: 15.75rem auto 11.375rem;
     }
@@ -250,7 +269,7 @@ header {
     z-index: 1;
 }
 
-@media screen {
+@media screen and (min-width: 46rem) {
     .plan .plan__img {
         width: 16.88rem;
         left: 30%;
