@@ -62,7 +62,7 @@ html {
     letter-spacing: -0.0625rem;
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 46rem) and (max-width: 54rem) {
     .header .header__title {
         width: 70%;
         line-height: 4rem;
@@ -81,7 +81,16 @@ html {
     }
 }
 
-@media screen and (min-width) {}
+@media screen and (min-width: 55rem) {
+    .header__title {
+        font-size: var(--fs__h1-desktop);
+    }
+
+    .header__p {
+        font-size: var(--fs__body-desktop-1);
+        line-height: 2.125rem;
+    }
+}
 
 .header__p {
     font-size: var(--fs__body-mobile-1);
@@ -98,10 +107,22 @@ html {
     color: var(--color__neutral-2);
 }
 
+@media screen and (min-width: 55rem) {
+    .plan-premium__title {
+        font-size: var(--fs__h2-desktop);
+    }
+}
+
 .plan-premium__p {
     font-size: var(--fs__body-mobile-2);
     font-weight: var(--regular);
     color: var(--color__neutral-2);
+}
+
+@media screen and (min-width: 55rem) {
+    .plan-premium__p {
+        font-size: var(--fs__body-desktop-2);
+    }
 }
 
 .plan-premium__price {
@@ -199,6 +220,7 @@ body {
     }
 }
 
+
 header {
     display: flex;
     flex-direction: column;
@@ -215,7 +237,7 @@ header {
     margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 46rem) and (max-width: 50rem) {
     .header {
         padding: 2.5rem 0;
     }
@@ -227,6 +249,19 @@ header {
     .header__p {
         width: 74%;
         max-width: 32rem;
+    }
+}
+
+@media screen and (min-width: 55rem) {
+
+    .header__title {
+        max-width: 63.43rem;
+        line-height: 5.5rem;
+    }
+
+    .header__p {
+        max-width: 51.56rem;
+        line-height: 2.125rem;
     }
 }
 
@@ -254,7 +289,7 @@ header {
     left: 10%;
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 46rem) and (max-width: 50rem) {
     .plan .plan__img-bg {
         left: 30%;
     }
@@ -269,13 +304,22 @@ header {
     z-index: 1;
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 46rem) and (max-width: 50rem) {
     .plan .plan__img {
         width: 16.88rem;
         left: 30%;
         top: 10rem;
     }
 }
+
+@media screen and (min-width: 55rem) {
+    .plan .plan__img {
+        width: 19.5rem;
+        left: 20%;
+        top: 6rem;
+    }
+}
+
 
 .plan .plan-premium {
     display: flex;
