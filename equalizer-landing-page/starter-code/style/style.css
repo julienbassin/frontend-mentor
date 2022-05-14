@@ -282,6 +282,12 @@ header {
     }
 }
 
+@media screen and (min-width: 55rem) {
+    .plan {
+        margin: 20rem 0 12rem;
+    }
+}
+
 .plan .plan__img-bg {
     position: absolute;
     transform: scale(0.9);
@@ -289,7 +295,7 @@ header {
     left: 10%;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 50rem) {
+@media screen and (max-width: 46rem) {
     .plan .plan__img-bg {
         left: 30%;
     }
@@ -304,7 +310,7 @@ header {
     z-index: 1;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 50rem) {
+@media screen and (max-width: 55rem) {
     .plan .plan__img {
         width: 16.88rem;
         left: 30%;
@@ -315,8 +321,13 @@ header {
 @media screen and (min-width: 55rem) {
     .plan .plan__img {
         width: 19.5rem;
-        left: 20%;
+        left: 21%;
         top: 6rem;
+    }
+
+    .plan .plan__img-bg {
+        left: 25.1%;
+        top: -2.45rem;
     }
 }
 
@@ -334,7 +345,7 @@ header {
     z-index: 2;
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (max-width: 50rem) {
     .plan .plan-premium {
         width: 25rem;
         height: 34.16rem;
@@ -343,8 +354,27 @@ header {
     }
 }
 
+@media screen and (min-width: 55rem) {
+    .plan .plan-premium {
+        width: 27.875rem;
+        height: 39rem;
+        left: 38%;
+        top: 20%;
+    }
+}
+
 .plan .plan-premium__p {
     margin: 1rem 0;
+}
+
+@media screen and (min-width: 55rem) {
+    .plan .plan-premium {
+        padding: 3.2rem;
+        left: 40%;
+        bottom: -7.5rem;
+    }
+
+
 }
 
 .btn {
