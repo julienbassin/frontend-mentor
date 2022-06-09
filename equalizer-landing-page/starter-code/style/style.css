@@ -62,7 +62,7 @@ html {
     letter-spacing: -0.0625rem;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 47rem) {
+@media screen and (max-width: 46rem) {
     .header .header__title {
         width: 70%;
         line-height: 4rem;
@@ -81,7 +81,7 @@ html {
     }
 }
 
-@media screen and (min-width: 55rem) {
+@media screen and (min-width: 47rem) {
     .header__title {
         font-size: var(--fs__h1-desktop);
     }
@@ -107,7 +107,7 @@ html {
     color: var(--color__neutral-2);
 }
 
-@media screen and (min-width: 55rem) {
+@media screen and (min-width: 47rem) {
     .plan-premium__title {
         font-size: var(--fs__h2-desktop);
     }
@@ -119,7 +119,7 @@ html {
     color: var(--color__neutral-2);
 }
 
-@media screen and (min-width: 55rem) {
+@media screen and (min-width: 47rem) {
     .plan-premium__p {
         font-size: var(--fs__body-desktop-2);
     }
