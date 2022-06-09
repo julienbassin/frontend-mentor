@@ -62,7 +62,7 @@ html {
     letter-spacing: -0.0625rem;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 54rem) {
+@media screen and (min-width: 46rem) and (max-width: 47rem) {
     .header .header__title {
         width: 70%;
         line-height: 4rem;
@@ -191,7 +191,7 @@ body {
     flex-direction: column;
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 46rem) and (max-width: 47rem) {
     body {
         background-image: url("../assets/bg-pattern-1.svg");
         background-repeat: no-repeat;
@@ -213,7 +213,14 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 46rem) and (max-width: 47rem) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 47rem) {
     .container {
         width: 90%;
         margin: 0 auto;
@@ -276,7 +283,7 @@ header {
 
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 46rem) and (max-width: 50rem) {
     .plan {
         margin: 15.75rem auto 11.375rem;
     }
@@ -295,7 +302,7 @@ header {
     left: 10%;
 }
 
-@media screen and (max-width: 46rem) {
+@media screen and (min-width: 46rem) and (max-width: 50rem) {
     .plan .plan__img-bg {
         left: 30%;
     }
@@ -310,7 +317,7 @@ header {
     z-index: 1;
 }
 
-@media screen and (max-width: 55rem) {
+@media screen and (min-width: 46rem) and (max-width: 50rem) {
     .plan .plan__img {
         width: 16.88rem;
         left: 30%;
@@ -345,7 +352,7 @@ header {
     z-index: 2;
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (min-width: 46rem) and (max-width: 50rem) {
     .plan .plan-premium {
         width: 25rem;
         height: 34.16rem;
@@ -369,12 +376,18 @@ header {
 
 @media screen and (min-width: 55rem) {
     .plan .plan-premium {
-        padding: 3.2rem;
+        padding: 3.5rem;
         left: 40%;
         bottom: -7.5rem;
     }
 
+    .plan .plan-premium__p {
+        line-height: 2.125rem;
+    }
 
+    .plan .plan-premium__price {
+        margin: 1.5rem 0;
+    }
 }
 
 .btn {
@@ -428,12 +441,21 @@ header {
     }
 }
 
+@media screen and (min-width: 55rem) {
+    .footer .footer__rights {
+        width: 65%;
+        display: inline-flex;
+    }
+}
 
-.footer p {
-    width: 100%;
-    margin: 2rem 0;
+
+.footer ul {
     line-height: 1.625;
     font-weight: var(--regular);
+}
+
+.footer svg {
+    margin-right: 15rem;
 }
 
 .footer p a {
@@ -444,7 +466,7 @@ header {
     width: 6.25rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 46rem) {
