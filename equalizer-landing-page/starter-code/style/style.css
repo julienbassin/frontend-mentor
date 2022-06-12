@@ -62,7 +62,7 @@ html {
     letter-spacing: -0.0625rem;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     .header .header__title {
         width: 70%;
         line-height: 4rem;
@@ -169,7 +169,7 @@ body::before {
     z-index: -1;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     body::before {
         background-image: url(../assets/bg-main-tablet.png);
         right: 50%;
@@ -191,7 +191,7 @@ body {
     flex-direction: column;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     body {
         background-image: url("../assets/bg-pattern-1.svg");
         background-repeat: no-repeat;
@@ -213,7 +213,7 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     .container {
         width: 90%;
         margin: 0 auto;
@@ -222,7 +222,7 @@ body {
 
 @media screen and (min-width: 55rem) {
     .container {
-        width: 84%;
+        width: 82%;
         margin: 0 auto;
     }
 }
@@ -243,7 +243,7 @@ header {
     margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     .header {
         padding: 2.5rem 0;
     }
@@ -282,7 +282,7 @@ header {
 
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     .plan {
         margin: 15.75rem auto 11.375rem;
     }
@@ -301,7 +301,7 @@ header {
     left: 10%;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     .plan .plan__img-bg {
         left: 30%;
     }
@@ -316,7 +316,7 @@ header {
     z-index: 1;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     .plan .plan__img {
         width: 16.88rem;
         left: 30%;
@@ -351,7 +351,7 @@ header {
     z-index: 2;
 }
 
-@media screen and (min-width: 40rem) and (max-width: 48rem) {
+@media screen and (min-width: 46rem) {
     .plan .plan-premium {
         width: 25rem;
         height: 34.16rem;
@@ -441,6 +441,11 @@ header {
 }
 
 @media screen and (min-width: 55rem) {
+    .footer {
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+    }
+
     .footer .footer__rights {
         width: 65%;
         display: inline-flex;
