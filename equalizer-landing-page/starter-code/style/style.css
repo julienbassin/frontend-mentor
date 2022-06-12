@@ -62,7 +62,7 @@ html {
     letter-spacing: -0.0625rem;
 }
 
-@media screen and (max-width: 46rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     .header .header__title {
         width: 70%;
         line-height: 4rem;
@@ -81,7 +81,7 @@ html {
     }
 }
 
-@media screen and (min-width: 47rem) {
+@media screen and (min-width: 55rem) {
     .header__title {
         font-size: var(--fs__h1-desktop);
     }
@@ -107,7 +107,7 @@ html {
     color: var(--color__neutral-2);
 }
 
-@media screen and (min-width: 47rem) {
+@media screen and (min-width: 55rem) {
     .plan-premium__title {
         font-size: var(--fs__h2-desktop);
     }
@@ -119,7 +119,7 @@ html {
     color: var(--color__neutral-2);
 }
 
-@media screen and (min-width: 47rem) {
+@media screen and (min-width: 55rem) {
     .plan-premium__p {
         font-size: var(--fs__body-desktop-2);
     }
@@ -169,7 +169,7 @@ body::before {
     z-index: -1;
 }
 
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     body::before {
         background-image: url(../assets/bg-main-tablet.png);
         right: 50%;
@@ -191,7 +191,7 @@ body {
     flex-direction: column;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 47rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     body {
         background-image: url("../assets/bg-pattern-1.svg");
         background-repeat: no-repeat;
@@ -213,20 +213,19 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 47rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     .container {
         width: 90%;
         margin: 0 auto;
     }
 }
 
-@media screen and (min-width: 47rem) {
+@media screen and (min-width: 55rem) {
     .container {
-        width: 90%;
+        width: 84%;
         margin: 0 auto;
     }
 }
-
 
 header {
     display: flex;
@@ -244,7 +243,7 @@ header {
     margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 50rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     .header {
         padding: 2.5rem 0;
     }
@@ -283,7 +282,7 @@ header {
 
 }
 
-@media screen and (min-width: 46rem) and (max-width: 50rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     .plan {
         margin: 15.75rem auto 11.375rem;
     }
@@ -302,7 +301,7 @@ header {
     left: 10%;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 50rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     .plan .plan__img-bg {
         left: 30%;
     }
@@ -317,7 +316,7 @@ header {
     z-index: 1;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 50rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     .plan .plan__img {
         width: 16.88rem;
         left: 30%;
@@ -352,7 +351,7 @@ header {
     z-index: 2;
 }
 
-@media screen and (min-width: 46rem) and (max-width: 50rem) {
+@media screen and (min-width: 40rem) and (max-width: 48rem) {
     .plan .plan-premium {
         width: 25rem;
         height: 34.16rem;
