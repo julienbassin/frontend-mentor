@@ -180,7 +180,7 @@ body::before {
 @media screen and (min-width: 55rem) {
     body::before {
         background-image: url(../assets/bg-main-desktop.png);
-        right: 20%;
+        right: 15%;
         top: -5%;
     }
 }
@@ -436,8 +436,15 @@ header {
     .footer {
         flex-direction: row;
         justify-content: space-between;
-        padding: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+        padding-left: 0;
     }
+
+    .footer__rights svg {
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media screen and (min-width: 55rem) {
@@ -456,6 +463,7 @@ header {
 .footer ul {
     line-height: 1.625;
     font-weight: var(--regular);
+    margin-top: 2rem;
 }
 
 .footer svg {
@@ -470,10 +478,12 @@ header {
     width: 6.25rem;
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 46rem) {
+
     .icons {
         align-self: flex-end;
     }
