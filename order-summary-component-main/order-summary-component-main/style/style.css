@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* reset all margin, padding & ul,ol by default */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* typography */
+
+:root {
+    --color__neutral-1: rgb(25, 24, 38);
+    --color__neutral-2: rgb(252, 250, 249);
+    --fs__h1-desktop: 5.5rem;
+    --fs__h1-mobile-1: 2.5rem;
+    --fs__body-mobile-1: 1rem;
+    --fs__body-mobile-2: 1.125rem;
+    --fs__body-desktop-1: 1.25rem;
+    --fs__body-desktop-2: 1rem;
+    --regular: 500;
+    --bold: 900;
+    --padding-button: 1.2rem 3.6875rem;
+}
+
+body {
+    background-color: #E0E8FF;
+    font-family: 'Red Hot Display', sans-serif;
+}
+
+.card {
+    width: 327px;
+    height: 567px;
+    border: 2px solid salmon;
+}
