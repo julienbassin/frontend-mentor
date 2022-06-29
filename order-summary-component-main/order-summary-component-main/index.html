@@ -14,30 +14,33 @@
 </head>
 
 <body>
-  <main class="card">
-    <div class="card-content">
-      <img class="hero-img" src="images/illustration-hero.svg" />
-      <h1 class="card-heading">Order Summary</h1>
+  <main>
+    <section class="center-container">
+      <!-- image header-->
+      <img src="images/illustration-hero.svg" class="hero-img"></div>
 
-      <p class="card-info">
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-
-      <div class="plan">
-        <img src="images/icon-music.svg" alt="Music icon" class="music_icon">
-        <div class="plan-details">
-          <h2>Annual Plan</h2>
-          <p class="plan-price">$59.99/year</p>
-        </div>
-        <div class="change-plan-btn">
-          <span>Change</span>
-        </div>
+      <div class="order-summary">
+        <h2 class="card-heading">Order Summary</h2>
+        <p class="card-info">
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
       </div>
 
-      <button class="payment-btn" type="submit">Proceed to Payment</button>
-      <a class="cancel-btn" href="#">Cancel Order</a>
-    </div>
+      <div class="plan-container">
+        <img src="images/icon-music.svg" alt="Music icon" class="music_icon">
+        <div class="plan-details">
+          <h4>Annual Plan</h4>
+          <p class="plan-price">$59.99/year</p>
+        </div>
+        <a href="#">Change</a>
+      </div>
+
+      <div class="payment">
+        <button class="payment-btn" type="submit">Proceed to Payment</button>
+        <a class="cancel-btn" href="#">Cancel Order</a>
+      </div>
+    </section>
   </main>
 </body>
 

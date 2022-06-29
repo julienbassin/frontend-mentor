@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html:focus-within {
@@ -36,25 +37,27 @@ html:focus-within {
 body {
     background: hsl(225, 100%, 94%) url("images/pattern-background-desktop.svg") no-repeat;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
     font-family: 'Red Hot Display', sans-serif;
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
-.card {
-    width: 20.43rem;
-    height: 35.43rem;
-    background-color: #FFF;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
+.center-container {
+    text-align: center;
+    background-color: white;
+
+    border-radius: 1.25rem;
 }
 
-@media screen and (min-width: 31rem) {
-    .card {
-        width: 28.125rem;
-        height: 43.57rem;
-    }
+
+.hero-img {
+    width: 100%;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
 }
