@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800;900&display=swap');
 
 *,
 *::before,
@@ -32,28 +32,36 @@ html:focus-within {
     --fs__h4-desktop: 1rem;
     --fs__h4-mobile: 0.875rem;
     --regular: 500;
-    --bold: 700;
+    --bold: 800;
     --black: 900;
     --padding-button: 1.2rem 3.6875rem;
 }
 
 body {
-    background: hsl(225, 100%, 94%) url("images/pattern-background-desktop.svg") no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("/images/pattern-background-mobile.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
     font-family: 'Red Hot Display', sans-serif;
     font-size: var(--fs__body-mobile);
     font-weight: var(--fs__p-mobile);
-
 }
 
 h2 {
     font-size: var(--fs__h2-mobile);
+    font-weight: var(--bold);
+    color: #1F2E55;
+    font-style: normal;
 }
 
 h4 {
     font-size: var(--fs__h4-mobile);
+}
+
+p {
+    line-height: 25px;
+    color: hsl(224, 23%, 55%)
 }
 
 /* layout */
@@ -79,4 +87,13 @@ main {
     width: 100%;
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
+}
+
+.order-summary {
+    margin: 0 30px 0 30px;
+}
+
+.order-summary h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
