@@ -34,12 +34,27 @@ html:focus-within {
 }
 
 body {
-    background-color: #E0E8FF;
+    background: hsl(225, 100%, 94%) url("images/pattern-background-desktop.svg") no-repeat;
+    background-size: contain;
     font-family: 'Red Hot Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .card {
-    width: 327px;
-    height: 567px;
-    border: 2px solid salmon;
+    width: 20.43rem;
+    height: 35.43rem;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 31rem) {
+    .card {
+        width: 28.125rem;
+        height: 43.57rem;
+    }
 }
