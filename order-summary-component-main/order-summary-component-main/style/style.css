@@ -23,6 +23,8 @@ html:focus-within {
 :root {
     --color__neutral-1: rgb(25, 24, 38);
     --color__neutral-2: rgb(252, 250, 249);
+    --light-grey: hsl(225, 100%, 98%);
+    --purple: hsl(245, 75%, 52%);
     --fs__body-mobile: 0.938rem;
     --fs__body-desktop: 1.25rem;
     --fs__h2-desktop: 1.75rem;
@@ -96,4 +98,42 @@ main {
 .order-summary h2 {
     margin-top: 30px;
     margin-bottom: 20px;
+}
+
+.plan-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: var(--light-grey);
+    border-radius: 10px;
+    margin: 28px;
+    padding: 15px 10px;
+}
+
+.plan-container img {
+    width: 48px;
+}
+
+.plan-details {
+    margin-right: 40px;
+}
+
+.plan-container a {
+    color: var(--purple);
+    font-weight: var(--bold);
+    font-size: 0.813rem;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment .payment-btn {
+    background-color: var(--purple);
+    color: #FFF;
 }
