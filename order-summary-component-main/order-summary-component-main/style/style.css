@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800;900&display=swap');
 
+
 *,
 *::before,
 *::after {
@@ -24,6 +25,7 @@ html:focus-within {
     --color__neutral-1: rgb(25, 24, 38);
     --color__neutral-2: rgb(252, 250, 249);
     --light-grey: hsl(225, 100%, 98%);
+    --grey: hsl(224, 23%, 55%);
     --purple: hsl(245, 75%, 52%);
     --fs__body-mobile: 0.938rem;
     --fs__body-desktop: 1.25rem;
@@ -39,6 +41,13 @@ html:focus-within {
     --padding-button: 1.2rem 3.6875rem;
 }
 
+html,
+body {
+    height: 98%;
+    font-size: 16px;
+}
+
+
 body {
     background-color: hsl(225, 100%, 94%);
     background-image: url("/images/pattern-background-mobile.svg");
@@ -52,8 +61,8 @@ body {
 
 h2 {
     font-size: var(--fs__h2-mobile);
-    font-weight: var(--bold);
-    color: #1F2E55;
+    font-weight: 700;
+    color: black;
     font-style: normal;
 }
 
@@ -97,8 +106,10 @@ main {
 
 .order-summary h2 {
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
+
 
 .plan-container {
     display: flex;
@@ -126,6 +137,11 @@ main {
     font-size: 0.813rem;
 }
 
+.plan-container a:hover {
+    color: rgba(120, 109, 236, 1);
+    text-decoration: none;
+}
+
 .payment {
     display: flex;
     flex-direction: column;
@@ -133,7 +149,30 @@ main {
     align-items: center;
 }
 
+.payment a:hover {
+    color: black;
+}
+
 .payment .payment-btn {
+    width: 83%;
     background-color: var(--purple);
     color: #FFF;
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: var(--fs__body-mobile);
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+    box-shadow: 0px 20px 20px hsl(245, 75%, 52%, 15%);
+}
+
+.payment-btn:hover {
+    cursor: pointer;
+    background-color: rgba(120, 109, 236, 1)
+}
+
+.payment .cancel-btn {
+    text-decoration: none;
+    font-weight: var(--bold);
+    color: var(--grey);
 }
