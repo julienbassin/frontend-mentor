@@ -50,13 +50,18 @@ body {
 
 body {
     background-color: hsl(225, 100%, 94%);
-    background-image: url("/images/pattern-background-mobile.svg");
-    background-size: contain;
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-size: 100vw;
     background-repeat: no-repeat;
     background-position: top center;
     font-family: 'Red Hot Display', sans-serif;
     font-size: var(--fs__body-mobile);
     font-weight: var(--fs__p-mobile);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h2 {
@@ -91,6 +96,7 @@ main {
     text-align: center;
     background-color: white;
     border-radius: 1.25rem;
+    box-shadow: 0px 20px 20px hsl(245, 75%, 52%, 5%);
 }
 
 
@@ -175,4 +181,10 @@ main {
     text-decoration: none;
     font-weight: var(--bold);
     color: var(--grey);
+}
+
+@media only screen and (min-with: 400px) {
+    body {
+        background-color: red;
+    }
 }
