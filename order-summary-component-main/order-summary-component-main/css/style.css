@@ -47,7 +47,6 @@ body {
     font-size: 16px;
 }
 
-
 body {
     background-color: hsl(225, 100%, 94%);
     background-image: url("../images/pattern-background-mobile.svg");
@@ -183,13 +182,16 @@ main {
     color: var(--grey);
 }
 
-@media screen and (min-with: 450px) {
-    body {
+@media screen and (min-width: 768px) {
+    body{
         background-image: url("../images/pattern-background-desktop.svg");
+
     }
 
-    .center-container {
+    .center-container{
         width: 28.125rem;
         height: 43.563rem;
     }
+
+    
 }
