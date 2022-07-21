@@ -183,8 +183,13 @@ main {
     color: var(--grey);
 }
 
-@media only screen and (min-with: 400px) {
+@media screen and (min-with: 450px) {
     body {
-        background-color: red;
+        background-image: url("../images/pattern-background-desktop.svg");
+    }
+
+    .center-container {
+        width: 28.125rem;
+        height: 43.563rem;
     }
 }
