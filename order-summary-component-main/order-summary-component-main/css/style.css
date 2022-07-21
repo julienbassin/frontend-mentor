@@ -53,7 +53,7 @@ body {
     background-size: 100vw;
     background-repeat: no-repeat;
     background-position: top center;
-    font-family: 'Red Hot Display', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-size: var(--fs__body-mobile);
     font-weight: var(--fs__p-mobile);
 
@@ -183,15 +183,35 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    body{
+    body {
         background-image: url("../images/pattern-background-desktop.svg");
 
     }
 
-    .center-container{
+    .center-container {
         width: 28.125rem;
         height: 43.563rem;
     }
 
-    
+    .order-summary h2 {
+        font-size: var(--fs__h2-desktop);
+        font-weight: var(--black);
+    }
+
+    .order-summary p {
+        font-size: var(--fs__p-desktop);
+        font-weight: 500;
+        padding: 8px 16px;
+    }
+
+    .plan-details {
+        margin-left: -30px;
+    }
+
+    .plan-container {
+        margin: 2em 2.5em;
+        padding: 1.25em .5em;
+    }
+
+
 }
